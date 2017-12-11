@@ -2,18 +2,12 @@
 # Platform:     Windows
 # global variables
 
-
-###need to fix
-#no mas
-
 import re                               #tokenize the code
 opStack = []
 dictStack = [] #list of int, list tuples
 debug_level = 0
 scope = ""
 static_link_var = 0
-
-#----------------PART 2 BEGIN----------
 
 #Interpreter function accepts
 def interpreter(s, scopeInput):
@@ -223,13 +217,6 @@ def psIfElse():                                         #Handles ifelse statemen
             debug("Not a good bool")
     else:
         debug("Not enough operands on the stack")
-
-
-
-
-
-#----------------PART 2 END------------
-
 
 #--------------------------------
 
