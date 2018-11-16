@@ -1,0 +1,18 @@
+#lang racket
+
+
+(define x 2)
+(cond
+  [(eq? x 1) (display "x is 1")]
+  [(eq? x 2) (display "x is 2")]
+  [(eq? x 3) (display "x is 3")]
+  [else (display "x is some other value")]
+ )
+
+;#1 go into first list, check if empty, if empty, on call back cons element to return list
+(define flatten L1 L2)
+
+;#2 takes 0-n, val v, list L, returns list L2, copy length of list into new list, when hit recurse call that is eqaul to number N, skip adding current item and add val v instead, continue recursive copy. Helper fun needed
+(define replace n v L1)
+  
+;#3 
